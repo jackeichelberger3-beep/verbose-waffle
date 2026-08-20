@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logic Architect — 2D Logic Simulation Laboratory</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="toolbar" id="toolbar"></div>
+  <div class="main">
+    <div class="palette" id="palette"></div>
+    <button class="palette-toggle" id="paletteToggle" style="display:none">›</button>
+    <div class="canvas-wrap" id="canvasWrap">
+      <div class="canvas" id="canvas"></div>
+      <svg class="wire-svg" id="wireSvg" width="1" height="1"></svg>
+      <div class="gate-layer" id="gateLayer"></div>
+      <div class="hud" id="hud"></div>
+      <div class="gate-list" id="gateList" style="display:none"></div>
+      <canvas class="minimap" id="minimap" width="140" height="100"></canvas>
+    </div>
+  </div>
+</div>
+<div id="modalRoot"></div>
+<div class="toast" id="toast" style="display:none"></div>
+<script src="app.js"></script>
+</body>
+</html>
